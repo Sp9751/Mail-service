@@ -1,0 +1,42 @@
+{
+  "compilerOptions": {
+    /* Language and environment */
+    "target": "es6", // Output ES6-compatible code
+    "lib": ["es6", "DOM"], // Use ES6 and browser APIs
+
+    /* Module system */
+    "module": "commonjs", // Use ES module syntax
+    "moduleResolution": "node", // Use Node.js module resolution strategy
+    "esModuleInterop": true, // Enable interoperability between CommonJS and ES modules
+    "allowSyntheticDefaultImports": true, // Allow default imports from CommonJS modules
+    "resolveJsonModule": true, // Allow importing JSON files as modules
+
+    /* Strict type-checking */
+    "strict": true, // Enable all strict type-checking options
+    "noImplicitAny": true, // Disallow `any` unless explicitly specified
+    "strictNullChecks": true, // Require explicit handling of nullable types
+    "strictFunctionTypes": true, // Enforce function parameter compatibility
+    "strictBindCallApply": true, // Check `bind`, `call`, and `apply` methods
+    "strictPropertyInitialization": true, // Ensure class properties are initialized
+
+    /* Code quality and best practices */
+    "noUnusedLocals": true, // Report errors for unused local variables
+    "noUnusedParameters": true, // Report errors for unused parameters
+    "noImplicitReturns": true, // Require explicit return in all code paths
+    "noFallthroughCasesInSwitch": true, // Prevent fallthrough in switch statements
+
+    /* File inclusion and output */
+    "outDir": "./dist", // Directory for compiled JavaScript files
+    "rootDir": "./src", // Root directory of TypeScript source files
+    "allowJs": true, // Allow JavaScript files to be compiled
+    "checkJs": false, // Do not type-check JavaScript files
+    "skipLibCheck": true, // Skip type-checking of declaration files
+
+    /* Additional options */
+    "forceConsistentCasingInFileNames": true, // Enforce consistent case in import paths
+    "noEmitOnError": true, // Prevent emitting files if there are any errors
+    "noEmit": false // Emit compiled code (set to `true` for type-checking only)
+  },
+  "include": ["src/**/*.ts"], // Include all TypeScript files in the src directory
+  "exclude": ["node_modules", "dist", "**/*.test.ts"] // Exclude tests, build, and node_modules directories
+}
